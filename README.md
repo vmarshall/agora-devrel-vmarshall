@@ -4,7 +4,7 @@
 
 1. **Unzip & Enter**
    ```bash
-   git clone (https://github.com/vmarshall/agora-devrel-vmarshall)
+   git clone https://github.com/vmarshall/agora-devrel-vmarshall
    cd agora-devrel-vmarshall
    ```
 
