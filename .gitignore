@@ -15,7 +15,7 @@
 /.cache
 
 # Storybook build artifacts
-/storybook-static
+/storybook-staticß
 
 # Cypress output
 /cypress/screenshots/

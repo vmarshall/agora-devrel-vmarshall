@@ -35,7 +35,21 @@
    # open http://localhost:3000
    ```
 
+
+4. ** Deploy to Vercel**
+   ```bash
+   # add env vars in Project → Settings → Environment Variables
+   
+   vercel --prod
+   ```
 ---
+
+## Architecture and Caveats
+
+    - bug in the agentid widget when LLM is connected
+    - created a Agora video widget, but didn't have time to connect TTS to animation
+    - the captioning isn't really necessary and isn't grabbing both streams. It was more for my testing than anything because the audio portion works fine
+
 
 ## Usage Flow
 
@@ -129,3 +143,6 @@ curl -X POST https://<your-vercel-app>/api/agent/webhook \
 The UI now polls **`GET /api/agent/history?agentId=...`** every ~2s while the agent is running and merges any text items into the Captions panel. This ensures your **spoken** interactions (ASR→LLM output) appear as text even if you haven't wired webhooks yet.
 - Change the polling cadence or remove it if you prefer webhooks-only.
 - De-duplication is done client-side by a simple `{speaker|ts|text}` key.
+
+
+
