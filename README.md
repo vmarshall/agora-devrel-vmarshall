@@ -4,8 +4,8 @@
 
 1. **Unzip & Enter**
    ```bash
-   unzip agora-promer-option-a.zip
-   cd agora-promer
+   git clone (https://github.com/vmarshall/agora-devrel-vmarshall)
+   cd agora-devrel-vmarshall
    ```
 
 2. **Configure Environment Variables**
